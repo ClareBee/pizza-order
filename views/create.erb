@@ -1,0 +1,11 @@
+<div id="confirmation">
+<h2>Congratulations <%= @pizza.first_name%>! Your order was successful.</h2>
+<br>
+<p> You ordered <%=@pizza.quantity%> X <%=@pizza.topping %></p>
+<br>
+<p><span id="total"> Total: £<%= @pizza.total %> </span></p>
+<br>
+<a href="/pizzas/<%=@pizza.id%>/edit">Changed your mind? Edit your order.</a>
+<p>OR</p>
+<a href="/pizzas/<%=@pizza.id%>/delete">Not hungry after all? Delete your order.</a>
+</div>

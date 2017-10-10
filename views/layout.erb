@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pizza Shop</title>
+<link rel="stylesheet" href="/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Ribeye+Marrow" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="http://facebook.com" target="_blank"><img class="social" src="/if_Facebook_logo_2258500.png"></a></li>
+      <li><a href="http://twitter.com" target="_blank"><img class="social" src="/if_Twitter_logo_2258490.png"></a></li>
+      <li><a href="http://linkedin.com" target="_blank"><img class="social" src="/if_Linkedin_logo_2258497.png"></a></li>
+   </ul>
+ </nav>
+  <div class="container">
+    <div class="item"><img id="pizza" src="/pizza.png" alt="pizza slice"></div>
+    <div class="item"><h1>Da Marco</h1></div>
+    <div class="item"><h2>The Best Pizza in Town</h2></div>
+    <div class="item"><img id="pizzeria" src="/pizzeria.jpeg" alt="pizza on display"></div>
+
+    <div class="item">
+      <ul id="choices">
+        <li><a href="/pizzas">Home</a></li>
+        <li><a href="/pizzas/new">Order</a></li>
+      </ul>
+    </div>
+  </div>
+  <%= yield %>
+</body>
+<br>
+<br>
+<br>
+<footer>&copy; Da Marco 2017</footer>
+</html>

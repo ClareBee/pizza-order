@@ -1,0 +1,27 @@
+
+<form action="/pizzas/<%=@pizza.id%>" method="POST">
+    <fieldset>
+<!-- the for links to the id in the input section -->
+  <label for="firstName">First Name:</label>
+  <!-- typing of name needs to match the property in the model -->
+  <input type="text" name="first_name" id="firstName" value="<%=@pizza.first_name%>"/>
+  <label for="lastName">Last Name:</label>
+  <input type="text" name="last_name" id="lastName" value="<%=@pizza.last_name%>"/>
+
+  <label for="pizzaSelect">Select a pizza:</label>
+  <select name="topping" id="pizzaSelect">
+      <option value="Margherita">Margherita</option>
+      <option value="Napolitana">Napolitana</option>
+      <option value="Quattro_Stagioni">Quattro Stagioni</option>
+      <option value="Marinara">Marinara</option>
+      <option value="Capricciosa">Capricciosa</option>
+
+    <!-- the value chosen will get assigned to the topping key -->
+  </select>
+
+  <label for="quantity">Quantity:</label>
+  <input type="number" name="quantity" id="quantity" />
+
+  <input type="submit" value="Edit Your Order" id="submit"/>
+</fieldset>
+</form>

@@ -125,3 +125,14 @@ footer {
   font-size: 50px;
   color: #F25757;
 }
+
+#delete {
+  width: 25%;
+  height: 100px;
+  font-family: Helvetica;
+  font-size: 50px;
+  color: white;
+  background-color: #F25757;
+  margin: 25px 0 0 0;
+  border-radius: 15px;
+}
